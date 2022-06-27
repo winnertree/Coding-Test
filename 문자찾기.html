@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(str, data){
+                let answer=0;
+
+                for(let x of str){
+                    if(x==data){
+                        answer+=1;
+                    }
+                }
+
+                let answer2=str.split(data);
+                console.log(answer2.length-1);
+
+                return answer;
+            }
+            let str="COMPUTERPROGRAMMING";
+            console.log(solution(str,'R'));
+        </script>
+    </body>
+</html>
