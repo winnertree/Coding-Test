@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(str){
+                let answer="";
+
+                if(str.length%2==0){
+                    answer+=str[parseInt(str.length/2)];
+                    answer+=str[parseInt((str.length/2)-1)];
+                }
+                else{
+                    answer=str.substring(parseInt(str.length/2),parseInt(str.length/2+1))
+                }
+                return answer;
+            }
+            let str="gozod";
+            console.log(solution(str));
+        </script>
+    </body>
+</html>
